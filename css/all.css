@@ -141,7 +141,7 @@ a {
     justify-content: space-between;
 }
 
-.justify-ceenter {
+.justify-center {
     justify-content: center;
 }
 
@@ -278,6 +278,18 @@ a {
     margin-bottom: 64px;
 }
 
+.mr-8 {
+    margin-right: 8px;
+}
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
 .mr-40 {
     margin-right: 40px;
 }
@@ -286,4 +298,39 @@ a {
     margin-right: 48px;
 }
 
-/* page */
+/* 元件 */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '/';
+    padding: 0 12px;
+    color: var(--neutral-300);
+    font-weight: 700;
+}
+
+.breadcrumb-item {
+    display: flex;
+    font-weight: 500;
+}
+
+.breadcrumb-link {
+    color: var(--neutral-600);
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-dark {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
+
+.footer {
+    text-align: center;
+}
